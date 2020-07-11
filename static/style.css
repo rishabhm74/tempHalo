@@ -8,7 +8,7 @@
 }
 
 body{
-    height: auto;
+    height: 200vh;
     background-color: #ffffff;
 }
 
@@ -83,7 +83,7 @@ body{
     font-weight: 500;
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (min-width: 1080px){
     body{
         background-color: red;
     }
