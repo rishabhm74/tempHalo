@@ -285,11 +285,11 @@ body{
     .heroSectionSubTitle{
         width: 100%;
         font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
+        font-size: 0.5rem;
         color: #fff;
         padding: 1rem 0;
         font-weight: 200;
-        display: none;
+        display: ;
     }
 
     .mainSearchContainer{
