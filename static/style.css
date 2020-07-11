@@ -98,8 +98,8 @@ body{
     }
 
     .menuUserAvatar a img{
-        height: 1.8rem;
-        width: 1.8em;
+        height: 2rem;
+        width: 2rem;
         opacity: 0.5;
     }
 }
