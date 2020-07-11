@@ -84,6 +84,11 @@ body{
 }
 
 @media (max-width: 1280px){
+
+    .navbar{
+        background-color: #fff;
+    }
+
     .menuOpen{
         border: none;
     }
