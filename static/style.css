@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    background-color: #ffffff;
+}
+
+
+/* navbar starts */
+
+.navbar{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    height: 66px; /*0.09*/
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav li{
+    list-style: none;
+    background-color: ;
+}
+
+.navbar nav li a{
+    text-decoration: none;
+    color: #5e5e5e;
+    font-weight: 200;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar nav li a img{
+    height: 1.5rem; /* 0.02*/
+    width: 1.5rem;
+    margin: 0 1rem;
+}
+
+
+.menuOpen a img{
+    opacity: 0.3;
+    height: 1.5rem; 
+    width: 1.5rem;
+}
+
+.menuOpen{
+    border-right: 1px solid #dadada;
+}
+
+.menuUserAvatar a img{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.5;
+}
+
+.menuUserAvatar{
+    border-left: 1px solid #dadada;
+}
+
+.navLogo a{
+    font-family: 'Poppins',sans-serif;
+}
+
+.navLogo a span{
+    font-weight: 500;
+}
+
+/* navbar ends */
