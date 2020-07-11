@@ -10,6 +10,7 @@
 body{
     height: auto;
     background-color: #ffffff;
+    
 }
 
 
@@ -17,7 +18,7 @@ body{
 
 .navbar{
     background-color: #fff;
-    border-bottom: 1px solid rgb(233, 233, 233);
+    border-bottom: 1px solid #e9e9e9;
     height: 66px; /*0.09*/
     position: fixed;
     z-index: 10;
@@ -83,6 +84,29 @@ body{
     font-weight: 500;
 }
 
+/* navbar ends */
+
+
+/* sideMenu starts */
+
+.sideMenu{
+    height: 100vh;
+    width: 70%;
+    background-color: ;
+    position: fixed;
+    z-index: 10;
+    border-right: 1px solid #e9e9e9;
+    background-color: #fff;
+    margin-left: -70%;
+    transition: 0.7;
+    
+}
+
+/* sideMenu ends */
+
+
+
+
 @media (max-width: 1280px){
 
     .navbar{
@@ -104,4 +128,3 @@ body{
     }
 }
 
-/* navbar ends */
