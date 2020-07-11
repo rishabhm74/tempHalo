@@ -160,7 +160,8 @@ body{
 /* heroSection starts */
 
 .heroSection{
-    height: 768px; /* 100*/
+    overflow: hidden;
+    height: 667px; /* 100*/
     width: 100%;
     /* background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90); */
     /* background: linear-gradient(135deg, #CCE8F4,#9b53b6); */
@@ -168,6 +169,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .mainHeroSectionContainer{
@@ -204,30 +206,6 @@ body{
     border-radius: 0.3rem;
     margin: 1rem 0 0 0;
     box-shadow: 1rem 1rem 0px #00000012;
-}
-
-.moveDownBody{
-    height: 4rem;
-    width: 4rem;
-    background-color: #00000017;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 3rem 0 0 0;
-    border: 1px solid #13131315;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-.moveDownBody:hover{
-    background-color: #3b3b3b00;
-}
-
-.moveDownBody img{
-    height: 2rem;
-    width: 2rem;
-    
 }
 
 
