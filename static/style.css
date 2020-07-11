@@ -40,7 +40,7 @@ body{
 
 .navbar nav li a{
     text-decoration: none;
-    color: #5e5e5e;
+    color: #797979;
     font-weight: 200;
     font-size: 1rem;
     display: flex;
@@ -69,17 +69,17 @@ body{
 }
 
 .menuOpen{
-    border-right: 1px solid #dadada;
+    border-right: 1px solid #e7e7e7;
 }
 
 .menuUserAvatar a img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
     opacity: 0.5;
 }
 
 .menuUserAvatar{
-    border-left: 1px solid #dadada;
+    border-left: 1px solid #e7e7e7;
 }
 
 .navLogo a{
@@ -88,6 +88,7 @@ body{
 
 .navLogo a span{
     font-weight: 500;
+    color: #585858;
 }
 
 /* navbar ends */
@@ -155,6 +156,16 @@ body{
 
 /* sideMenu ends */
 
+/* heroSection starts */
+
+.heroSection{
+    height: 667px; /* 100*/
+    width: 100%;
+    /* background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90); */
+    background: linear-gradient(to bottom right, #CCE8F4,#9b53b6);
+}
+
+/* heroSection ends */
 
 
 
