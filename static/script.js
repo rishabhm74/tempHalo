@@ -18,3 +18,14 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
         sideMenuChecker = sideMenuChecker - 1;
     }
 });
+
+
+document.getElementById("mainSearchBar").addEventListener("focus", () =>{
+    document.getElementById("mainSearchContainer").classList.add("expandedClass");
+    document.getElementById("searchSupport").style.display = "none";
+})
+
+document.getElementById("mainSearchBar").addEventListener("focusout", () =>{
+    document.getElementById("mainSearchContainer").classList.remove("expandedClass");
+    document.getElementById("searchSupport").style.display = "block";
+})
