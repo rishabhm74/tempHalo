@@ -370,7 +370,7 @@ body{
         font-size: 2rem;
         color: #fff;
         font-weight: 600;
-        padding-top: 3rem;
+        padding: 3rem;
         display: flex;
         justify-content: left;
         align-items: left;
@@ -382,8 +382,8 @@ body{
         width: 100%;
         background-color: #fff;
         border-radius: 0.3rem;
-        margin: 0rem 0 0 0;
-        box-shadow: 1rem 1rem 0px #00000000;
+        margin: 1rem 0 0.5rem 0;
+        box-shadow: 1rem 1rem 20px #00000017;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -397,6 +397,14 @@ body{
         font-family: 'Poppins', sans-serif;
         padding: 1rem 0rem;
         background: none;
+    }
+
+    .mainSearchContainer input::placeholder{
+        font-size: 0.5rem;
+    }
+
+    .mainSearchContainer input:focus{
+        outline: none;
     }
     
     .mainSearchContainer button{
