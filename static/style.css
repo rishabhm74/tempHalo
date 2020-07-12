@@ -293,9 +293,31 @@ body{
 
 .expandedClass{
     width: 80%;
-    position: absolute;
+    position: fixed;
     top: 10%;
     z-index: 20;
+}
+
+.overlay{
+    z-index: 19;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.308);
+    animation-name: overlayVisible;
+    animation-duration: 0.4s;
+    display: none;
+}
+
+@keyframes overlayVisible{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 /* expanded class ends */
@@ -479,8 +501,8 @@ body{
 
     .expandedClass{
         width: 90%;
-        position: absolute;
-        top: 15%;
+        position: fixed;
+        top: 2%;
         z-index: 20;
     }
 
