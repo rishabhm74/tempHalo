@@ -370,7 +370,7 @@ body{
         font-size: 2rem;
         color: #fff;
         font-weight: 600;
-        padding: 3rem;
+        /* padding: 3rem; */
         display: flex;
         justify-content: left;
         align-items: left;
@@ -383,7 +383,7 @@ body{
         background-color: #fff;
         border-radius: 0.3rem;
         margin: 1rem 0 0.5rem 0;
-        box-shadow: 1rem 1rem 20px #00000017;
+        box-shadow: 1rem 1rem 15px #00000017;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -399,9 +399,7 @@ body{
         background: none;
     }
 
-    .mainSearchContainer input::placeholder{
-        font-size: 0.5rem;
-    }
+    
 
     .mainSearchContainer input:focus{
         outline: none;
@@ -431,7 +429,7 @@ body{
         color: #fff;
         text-align: left;
         font-size: 0.75rem;
-        padding: 0rem 0rem;
+        padding: 0.5rem 0rem;
         font-weight: 300;
     }
 
