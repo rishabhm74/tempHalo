@@ -308,7 +308,7 @@ body{
     .menuUserAvatar a img{
         height: 2rem;
         width: 2rem;
-        opacity: 0.7;
+        opacity: 0.3;
     }
 
     .sideMenu ul{
@@ -360,6 +360,7 @@ body{
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        padding: ;
     }
 
 
@@ -369,8 +370,96 @@ body{
         font-size: 1.5rem;
         color: #fff;
         font-weight: 600;
-        padding-top: 2rem;
+        padding-top: 3rem;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
     }
+
+    .mainSearchContainer{
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        margin: 0rem 0 0 0;
+        box-shadow: 1rem 1rem 0px #00000013;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .mainSearchContainer input{
+        width: 90%;
+        font-size: 1rem;
+        color: #333333;
+        font-family: 'Poppins', sans-serif;
+        padding: 1rem 1rem;
+        background: none;
+    }
+    
+    .mainSearchContainer button{
+        border: none;
+        background: none;
+        cursor: pointer;
+        
+    }
+    
+    .mainSearchContainer button img{
+        height: 1rem;
+        width: 1rem;
+        opacity: 0.4;
+        transition: 0.3s;
+    }
+    
+    .mainSearchContainer button img:hover {
+        opacity: 1;
+    }
+    
+    .searchSupport{
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        text-align: left;
+        font-size: 0.75rem;
+        padding: 0rem 0rem;
+        font-weight: 300;
+    }
+
+
+
+    .learnMoreContainer p{
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        font-weight: 300;
+    }
+
+    .learnMoreContainer button{
+        border: none;
+        background: none;
+        border: 1px solid #ffffff2c;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.144);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .learnMoreContainer button:hover{
+        background-color: rgba(255, 255, 255, 0.247);
+    }
+
+    .learnMoreContainer button img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
 
 
     
