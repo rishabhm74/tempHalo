@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 *{
@@ -8,10 +9,11 @@
 }
 
 body{
-    height: 100vh;
+    height: 200vh;
     background-color: #ffffff;
-    
+    overflow-x: hidden;
 }
+
 
 
 /* navbar starts */
@@ -73,9 +75,9 @@ body{
 }
 
 .menuUserAvatar a img{
-    height: 2rem;
-    width: 2rem;
-    opacity: 0.7;
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.3;
 }
 
 .menuUserAvatar{
@@ -161,11 +163,11 @@ body{
 
 .heroSection{
     overflow: hidden;
-    height: 667px; /* 100*/
+    height: 768px; /* 100*/
     width: 100%;
-    /* background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90); */
+    background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90);
     /* background: linear-gradient(135deg, #CCE8F4,#9b53b6); */
-    background: linear-gradient(135deg, #3BA19D, #4cb47b);
+    /* background: linear-gradient(135deg, #3BA19D, #4cb47b); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,22 +192,96 @@ body{
     font-weight: 600;
 }
 
-.heroSectionSubTitle{
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    padding: 1rem 0;
-    font-weight: 200;
-}
+
 
 .mainSearchContainer{
-    height: 6rem;
+    height: auto;
     width: 100%;
     background-color: #fff;
     border-radius: 0.3rem;
-    margin: 1rem 0 0 0;
-    box-shadow: 1rem 1rem 0px #00000012;
+    margin: 1.5rem 0 0 0;
+    box-shadow: 1rem 1rem 0px #00000013;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mainSearchContainer input{
+    width: 90%;
+    font-size: 1rem;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 1rem;
+}
+
+.mainSearchContainer button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.mainSearchContainer button img{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.mainSearchContainer button img:hover {
+    opacity: 1;
+}
+
+.searchSupport{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1.5rem 0rem;
+    font-weight: 300;
+}
+
+
+.learnMoreContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.learnMoreContainer p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+
+.learnMoreContainer button{
+    border: none;
+    background: none;
+    border: 1px solid #ffffff2c;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.learnMoreContainer button:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+.learnMoreContainer button img{
+    height: 2rem;
+    width: 2rem;
 }
 
 
@@ -263,6 +339,19 @@ body{
         width: 1rem;
     }
 
+    .heroSection{
+        overflow: hidden;
+        height: 667px; /* 100*/
+        width: 100%;
+        background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90);
+        /* background: linear-gradient(135deg, #CCE8F4,#9b53b6); */
+        /* background: linear-gradient(135deg, #3BA19D, #4cb47b); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
     .mainHeroSectionContainer{
         height: 90%;
         width: 85%;
@@ -277,30 +366,13 @@ body{
     .heroSectionTitle{
         width: 100%;
         font-family: 'Poppins', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: #fff;
         font-weight: 600;
         padding-top: 2rem;
     }
 
-    .heroSectionSubTitle{
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.5rem;
-        color: #fff;
-        padding: 0rem 0;
-        font-weight: 200;
-        display: ;
-    }
 
-    .mainSearchContainer{
-        height: 4rem;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 0.3rem;
-        margin: 0rem 0 0 0;
-        box-shadow: 0.5rem 0.5rem 0px #00000012;
-    }
     
 }
 

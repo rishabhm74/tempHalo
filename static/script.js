@@ -5,8 +5,8 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
         document.body.style.marginLeft = "70%";
         document.body.style.transition = "0.7s";
         document.getElementById("sideMenu").style.transform = "transformX(70%)";
-        document.getElementById("sideMenuOpenIcon").style.transform = "rotate(90deg)";
-        document.getElementById("sideMenuOpenIcon").src = "static/assets/cross.svg";
+        document.getElementById("sideMenuOpenIcon").style.transform = "rotate(180deg)";
+        document.getElementById("sideMenuOpenIcon").src = "static/assets/rightArrow.svg";
         sideMenuChecker = sideMenuChecker + 1;
     }
     else{
