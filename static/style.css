@@ -200,7 +200,7 @@ body{
     background-color: #fff;
     border-radius: 0.3rem;
     margin: 1.5rem 0 0 0;
-    box-shadow: 1rem 1rem 0px #00000013;
+    box-shadow: 1rem 1rem 15px #00000013;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +239,7 @@ body{
     color: #fff;
     text-align: left;
     font-size: 1rem;
-    padding: 1.5rem 0rem;
+    padding: 2rem 0rem;
     font-weight: 300;
 }
 
@@ -294,7 +294,7 @@ body{
 .expandedClass{
     width: 80%;
     position: fixed;
-    top: 10%;
+    top: 4rem;
     z-index: 20;
 }
 
@@ -305,10 +305,10 @@ body{
     left: 0%;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.514);
     animation-name: overlayVisible;
     animation-duration: 0.4s;
-    display: none;
+    display: none; /* changed */
 }
 
 @keyframes overlayVisible{
@@ -319,6 +319,44 @@ body{
         opacity: 1;
     }
 }
+
+.suggestionList{
+    height: auto;
+    width: 78%;
+    background-color: ;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+}
+
+.suggestionTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 3rem 2rem 0 2rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.suggestionList ul li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: ;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.397);
+    width: 80%;
+}
+
+.suggestionList ul li:nth-child(1){
+    padding-top: 2rem;
+}
+
+.suggestionList ul li:last-child{
+    border-bottom: none;
+}
+
 
 /* expanded class ends */
 
@@ -462,7 +500,7 @@ body{
         color: #fff;
         text-align: left;
         font-size: 0.75rem;
-        padding: 0.5rem 0rem;
+        padding: 0.75rem 0rem;
         font-weight: 300;
     }
 
@@ -502,11 +540,27 @@ body{
     .expandedClass{
         width: 90%;
         position: fixed;
-        top: 2%;
+        top: 1rem;
         z-index: 20;
     }
 
+    .suggestionList{
+        height: auto;
+        width: 90%;
+        background-color: ;
+        margin: 0 auto;
+        position: relative;
+        top: 5rem;
+    }
 
+    .suggestionTitle{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        padding: 1rem 1rem 0 1.5rem;
+        color: #fff;
+        font-weight: 300;
+    }
+    
 
     
 }

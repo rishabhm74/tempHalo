@@ -24,6 +24,7 @@ document.getElementById("mainSearchBar").addEventListener("focus", () =>{
     document.getElementById("mainSearchContainer").classList.add("expandedClass");
     document.getElementById("searchSupport").style.display = "none";
     document.getElementById("overlay").style.display = "block";
+    // document.getElementById("mainSearchContainer").style.boxShadow = "0px 0px 0px #00000000";
 })
 
 document.getElementById("mainSearchBar").addEventListener("focusout", () =>{
