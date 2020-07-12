@@ -20,15 +20,21 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
 });
 
 
-document.getElementById("mainSearchBar").addEventListener("focus", () =>{
+document.getElementById("mainSearchBar").addEventListener("click", () =>{
     document.getElementById("mainSearchContainer").classList.add("expandedClass");
-    document.getElementById("searchSupport").style.display = "none";
+    // document.getElementById("searchSupport").style.display = "none";
     document.getElementById("overlay").style.display = "block";
-    // document.getElementById("mainSearchContainer").style.boxShadow = "0px 0px 0px #00000000";
+    document.getElementById("mainSearchContainer").style.boxShadow = "0px 0px 0px #00000000";
+    document.getElementById("mainSearchContainer").style.borderRadius = "0rem";
+    document.getElementById("mainSearchContainer").style.borderBottom = "2px solid orange";
 })
 
-document.getElementById("mainSearchBar").addEventListener("focusout", () =>{
+document.getElementById("closeMainSearchContainer").addEventListener("click", () =>{
     document.getElementById("mainSearchContainer").classList.remove("expandedClass");
-    document.getElementById("searchSupport").style.display = "block";
+    document.getElementById("mainSearchBar").value = "";
+    // document.getElementById("searchSupport").style.display = "block";
     document.getElementById("overlay").style.display = "none";
+    document.getElementById("mainSearchContainer").style.boxShadow = "1rem 1rem 15px #00000013";
+    document.getElementById("mainSearchContainer").style.borderRadius = "0.3rem";
+    document.getElementById("mainSearchContainer").style.border = "none";
 })
