@@ -366,7 +366,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 4rem;
 }
 
@@ -584,6 +584,16 @@ body{
         padding: 3rem 1rem 0 1.5rem;
         color: #333333;
         font-weight: 400;
+    }
+
+    .closeMainSearchContainer{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 8rem;
     }
     
 
