@@ -295,6 +295,7 @@ body{
     width: 80%;
     position: absolute;
     top: 10%;
+    z-index: 20;
 }
 
 /* expanded class ends */
@@ -474,6 +475,13 @@ body{
     .learnMoreContainer button img{
         height: 1.5rem;
         width: 1.5rem;
+    }
+
+    .expandedClass{
+        width: 90%;
+        position: absolute;
+        top: 15%;
+        z-index: 20;
     }
 
 
