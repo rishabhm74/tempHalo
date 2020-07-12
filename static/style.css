@@ -171,7 +171,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 .mainHeroSectionContainer{
@@ -353,7 +352,7 @@ body{
     }
 
     .mainHeroSectionContainer{
-        height: 90%;
+        height: 70%;
         width: 85%;
         background-color: ;
         display: flex;
