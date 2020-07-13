@@ -440,7 +440,8 @@ body{
         width: 100%;
         /* background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90); */
         /* background: linear-gradient(135deg, #CCE8F4,#9b53b6); */
-        background: linear-gradient(135deg, #3BA19D, #4cb47b);
+        /* background: linear-gradient(135deg, #3BA19D, #4cb47b); */
+        background: url('assets/andBack.svg');
         display: flex;
         justify-content: center;
         align-items: center;
@@ -448,7 +449,7 @@ body{
     }
 
     .mainHeroSectionContainer{
-        height: 50%;
+        height: 60%;
         width: 85%;
         background-color: ;
         display: flex;
@@ -463,7 +464,7 @@ body{
         width: 100%;
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
-        color: #fff;
+        color: #333;
         font-weight: 600;
         /* padding: 3rem; */
         display: flex;
@@ -475,10 +476,12 @@ body{
     .mainSearchContainer{
         height: auto;
         width: 100%;
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 0.3rem;
         margin: 1rem 0 0.5rem 0;
-        box-shadow: 1rem 1rem 15px #00000017;
+        /* box-shadow: 1rem 1rem 15px #00000017; */
+        box-shadow: none;
+        border: 1px solid #e4e4e4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -521,7 +524,7 @@ body{
     .searchSupport{
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        color: #fff;
+        color: #333333;
         text-align: left;
         font-size: 0.75rem;
         padding: 0.75rem 0rem;
@@ -533,20 +536,20 @@ body{
 
     .learnMoreContainer p{
         font-family: 'Poppins', sans-serif;
-        color: #fff;
-        font-size: 1.2rem;
+        color: #333333;
+        font-size: 1.1rem;
         padding: 1rem 0;
-        font-weight: 300;
+        font-weight: 500;
     }
 
     .learnMoreContainer button{
         border: none;
         background: none;
-        border: 1px solid #ffffff2c;
+        border: 1px solid #3838382c;
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.144);
+        background-color: rgba(10, 10, 10, 0.315);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -554,7 +557,7 @@ body{
     }
 
     .learnMoreContainer button:hover{
-        background-color: rgba(255, 255, 255, 0.247);
+        background-color: rgba(0, 0, 0, 0.61);
     }
 
     .learnMoreContainer button img{
