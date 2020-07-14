@@ -169,7 +169,7 @@ body{
     /* background: linear-gradient(to bottom right, #DF7784, #925D8C, #5D4C90); */
     /* background: linear-gradient(135deg, #CCE8F4,#9b53b6); */
     /* background: linear-gradient(135deg, #3BA19D, #4cb47b); */
-    background: url('assets/andBack.svg');
+    background: #fff url('assets/andBack.svg') repeat 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ body{
 
     .heroSection{
         overflow: hidden;
-        height: 667px;
+        max-height: 667px;
         width: 100%;
         display: flex;
         justify-content: center;
