@@ -21,7 +21,7 @@ body{
 
 .navbar{
     background-color: #FEEF3C; /* ff*/
-    border-bottom: 1px solid #f5e31d; /*e9*/
+    border-bottom: 1px solid #f5e31d;   /*e9*/
     height: 60px; /*0.09*/
     position: fixed;
     z-index: 10;
