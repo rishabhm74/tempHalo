@@ -10,7 +10,7 @@
 
 
 body{
-    height: 200vh;
+    height: auto;
     background-color: #ffffff;
     overflow-x: hidden;
 }
@@ -20,12 +20,13 @@ body{
 /* navbar starts */
 
 .navbar{
-    background-color: #fff;
-    border-bottom: 1px solid #e9e9e9;
+    background-color: #ffffff; /* FEEF3C*/
+    border-bottom: 1px solid #eeeeee;   /*e9*/ /*f5e31d*/
     height: 60px; /*0.09*/
     position: fixed;
     z-index: 10;
     width: 100%;
+    /* box-shadow: 0px 0px 10px #7068101f; */
 }
 
 .navbar nav{
@@ -43,7 +44,7 @@ body{
 
 .navbar nav li a{
     text-decoration: none;
-    color: #797979;
+    color: #181818; /*79*/
     font-weight: 200;
     font-size: 1rem;
     display: flex;
@@ -65,24 +66,24 @@ body{
 
 
 .menuOpen a img{
-    opacity: 0.3;
+    opacity: 0.6; /*0.3*/
     height: 1.5rem; 
     width: 1.5rem;
     transition: 1s;
 }
 
 .menuOpen{
-    border-right: 1px solid #e7e7e7;
+    border-right: 1px solid #444444; /*e7*/
 }
 
 .menuUserAvatar a img{
     height: 1.5rem;
     width: 1.5rem;
-    opacity: 0.3;
+    opacity: 0.6; /*0.3*/
 }
 
 .menuUserAvatar{
-    border-left: 1px solid #e7e7e7;
+    border-left: 1px solid #444444;
 }
 
 .navLogo a{
@@ -91,7 +92,7 @@ body{
 
 .navLogo a span{
     font-weight: 500;
-    color: #585858;
+    color: #181818;
 }
 
 /* navbar ends */
@@ -144,7 +145,7 @@ body{
 
 .sideMenu ul li a:hover{
     opacity: 1;
-    color: #4ec7a9;
+    color: #242424; /*4ec7a9*/
 }
 
 .sideMenu ul li a img{
@@ -178,13 +179,15 @@ body{
 }
 
 .mainHeroSectionContainer{
-    height: 90%;
+    height: 85%;
     width: 50%;
     background-color: ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .heroSectionTitle{
@@ -275,7 +278,7 @@ body{
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: rgba(10, 10, 10, 0.315);
+    background-color: #0a0a0a31;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,6 +287,10 @@ body{
 
 .learnMoreContainer button:hover{
     background-color: rgba(0, 0, 0, 0.61);
+}
+
+.learnMoreContainer button:focus{
+    outline: none;
 }
 
 .learnMoreContainer button img{
@@ -382,6 +389,10 @@ body{
     transition: 0.3s;
 }
 
+.closeMainSearchContainer img:focus{
+    outline: none;
+}
+
 .closeMainSearchContainer img:hover{
     opacity: 1;
 }
@@ -390,12 +401,161 @@ body{
 /* expanded class ends */
 
 
+/* questionContainer starts */
+
+.questionContainer{
+    height: 460px; /* 50%*/
+    background: linear-gradient(to bottom,#fafafae0 50%, #ffffff 50%);
+    width: 100%;
+    background: #fff url('assets/bigBack.png') repeat 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+
+.questionContainerInner{
+    height: 60%;
+    margin: 0 auto;
+    width: 85%;
+    border: 1px solid #f0f0f0;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px hsla(0, 0%, 35%, 0.082);
+}
+
+
+
+.questionTitleBar{
+    height: 10%;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    background-color: rgb(243, 243, 243);
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.titleButtonsHolder{
+    margin-left: 1%;
+    width: 7%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.titleButtonsHolder div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redButton > div{
+    background-color: #F25056;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.yellowButton > div{
+    background-color: #FAC536;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.greenButton > div{
+    background-color: #6CDE3F;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+.mainQuesionContainer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    background-color: ;
+}
+
+.howTo{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding: 3rem 5rem 1.5rem 5rem;
+    color: #505050;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.howToAnswer{
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    background-color: ;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.howToAnswerMain{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #818181;
+    padding: 0 0rem 0 3rem ;
+}
+
+.howToAnserButton{
+    width: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howToAnserButton button{
+    margin:  0 auto;
+    padding: 0.75rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 0.3rem;
+    border: 1px solid #005ae2;
+    background-color: #0066ff; /*0066ff*/
+    transition: 0.3s;
+
+}
+
+.howToAnserButton button:hover{
+    color: #0066ff;
+    border: 1px solid #005ae2;
+    background-color: #ffffff;
+}
+
+
+/* questionContainer ends  */
+
+/* lettersHolder starts */
+
+.lettersHolder{
+    height: 768px;
+    width: 100%;
+}
+
+
+/* lettersHolder ends */
+
+
 
 @media (max-width: 1280px){
 
-    .navbar{
-        background-color: #fff;
-    }
+    /* .navbar{
+        background-color: #FEEF3C;
+    } */
 
     .menuOpen{
         border: none;
@@ -408,7 +568,7 @@ body{
     .menuUserAvatar a img{
         height: 2rem;
         width: 2rem;
-        opacity: 0.3;
+        opacity: 0.6; /*0.3*/
     }
 
     .sideMenu ul{
@@ -563,11 +723,11 @@ body{
     .learnMoreContainer button{
         border: none;
         background: none;
-        border: 1px solid #3838382c;
+        border: 1px solid #0a0a0a31;
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        background-color: rgba(10, 10, 10, 0.315);
+        background-color: #0a0a0a50;
         display: flex;
         justify-content: center;
         align-items: center;

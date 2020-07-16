@@ -7,6 +7,7 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
         document.getElementById("sideMenu").style.transform = "transformX(70%)";
         document.getElementById("sideMenuOpenIcon").style.transform = "rotate(180deg)";
         document.getElementById("sideMenuOpenIcon").src = "static/assets/rightArrow.svg";
+        document.getElementById("mainHeroSectionContainer").style.opacity = "0";
         sideMenuChecker = sideMenuChecker + 1;
     }
     else{
@@ -15,6 +16,7 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
         document.getElementById("sideMenu").style.marginLeft = "-70%";
         document.getElementById("sideMenuOpenIcon").style.transform = "rotate(0deg)";
         document.getElementById("sideMenuOpenIcon").src = "static/assets/menu.svg";
+        document.getElementById("mainHeroSectionContainer").style.opacity = "1";
         sideMenuChecker = sideMenuChecker - 1;
     }
 });
