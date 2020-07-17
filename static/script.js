@@ -3,24 +3,19 @@ var sideMenuChecker = 0;
 
 document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
     if(sideMenuChecker == 0){
-        document.body.style.marginLeft = "70%";
-        document.body.style.transition = "0.7s";
-        document.getElementById("sideMenu").style.transform = "transformX(70%)";
-        document.getElementById("sideMenuOpenIcon").style.transform = "rotate(180deg)";
-        document.getElementById("sideMenuOpenIcon").src = "static/assets/rightArrow.svg";
-        document.getElementById("mainHeroSectionContainer").style.opacity = "0";
+        document.getElementById("sideMenu").style.display = "block";
+        document.getElementById("sideMenuOpenIcon").src = "static/assets/cross.svg";
+        document.getElementById("sideMenuOpen").style.transform = "rotate(90deg)";
         sideMenuChecker = sideMenuChecker + 1;
     }
     else{
-        document.body.style.marginLeft = "0%";
-        document.body.style.transition = "0.7s";
-        document.getElementById("sideMenu").style.marginLeft = "-70%";
-        document.getElementById("sideMenuOpenIcon").style.transform = "rotate(0deg)";
+        document.getElementById("sideMenu").style.display = "none";
         document.getElementById("sideMenuOpenIcon").src = "static/assets/menu.svg";
-        document.getElementById("mainHeroSectionContainer").style.opacity = "1";
+        document.getElementById("sideMenuOpen").style.transform = "rotate(0deg)";
         sideMenuChecker = sideMenuChecker - 1;
     }
 });
+
 
 
 document.getElementById("mainSearchBar").addEventListener("click", () =>{
