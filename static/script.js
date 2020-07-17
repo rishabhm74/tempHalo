@@ -1,5 +1,6 @@
 var sideMenuChecker = 0;
 
+
 document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
     if(sideMenuChecker == 0){
         document.body.style.marginLeft = "70%";
