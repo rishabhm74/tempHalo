@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: rgb(91, 255, 118);
+}
 
 body{
     height: auto;
@@ -264,11 +267,11 @@ body{
 .learnMoreContainer button{
     border: none;
     background: none;
-    border: 1px solid #3838382c;
+    border: 1px solid #f8c724;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: #0a0a0a31;
+    background-color: #ffcf2f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +279,7 @@ body{
 }
 
 .learnMoreContainer button:hover{
-    background-color: rgba(0, 0, 0, 0.61);
+    background-color: #ffce2fb4;
 }
 
 .learnMoreContainer button:focus{
@@ -284,8 +287,8 @@ body{
 }
 
 .learnMoreContainer button img{
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 
@@ -536,9 +539,69 @@ body{
 /* lettersHolder starts */
 
 .lettersHolder{
-    height: 768px;
+    height: auto; /*130 998*/
     width: 100%;
 }
+
+.letterHolderTitleHolder{
+    width: 100%;
+    height: 230px; /*30*/
+}
+
+.mainLetterHolder{
+    background-color: ;
+    height: 768px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 17% 66% 17%;
+}
+
+.allBigLettersHoler{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.allBigLettersHoler{
+    height: 100%;
+    width: 100%;
+}
+
+.letteColumn1{
+    background-color: ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column
+}
+
+.letteColumn2{
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.letteColumn3{
+    background-color: ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column
+}
+
+.bigLetter{
+    height: 42%;
+    width: 95%;
+    margin:  0 auto;
+    background-color: ;
+    border: 1px solid #d8d8d8;
+    margin-top: 1rem;
+}
+
 
 
 /* lettersHolder ends */
