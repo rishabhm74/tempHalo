@@ -83,6 +83,7 @@ body{
     height: 1.5rem;
     width: 1.5rem;
     opacity: 0.6; /*0.3*/
+    transition: 0.5s;
 }
 
 .menuUserAvatar{
@@ -156,6 +157,99 @@ body{
 }
 
 /* sideMenu ends */
+
+
+/* accountMenu starts */
+
+.accountMenu{
+    height: 0;
+    width: 0;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    position: fixed;
+    z-index: 13;
+    top: 5%;
+    right: 2%;
+    box-shadow: -5px 5px 10px hsla(0, 0%, 0%, 0.047);
+    display: grid;
+    grid-template-rows: 70% 30%;
+    overflow: hidden;
+    animation-name: overlayVisible;
+    animation-duration: 0.3s;
+    display: none;
+}
+
+.userAvatarContainer{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0 0.5rem;
+}
+
+.userAvatarContainer img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+}
+
+.userUsername{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #505050;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.userLoginSignupContainer{
+    height: auto;
+    width: 100%;
+}
+
+.userLoginSignupContainer li{
+    text-align: center;
+    list-style: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.userLoginSignupContainer li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #dddddd;
+    font-size: 1rem;
+    padding: 0.5rem 2.5rem;
+    transition: 0.3s;
+}
+
+.userLoginSignupContainer li a:hover{
+    color: #6b6b6b;
+}
+
+.userLoginSignupContainer li:last-child{
+    padding-bottom: 1.5rem;
+}
+
+.userLoginSignupContainer li:first-child a{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.notSignedIn{
+    font-size: 0.8rem;
+    color: #cecece;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* accountMenu ends */
+
 
 /* heroSection starts */
 
@@ -415,7 +509,7 @@ body{
     border: 1px solid #f0f0f0;
     border-radius: 0.5rem;
     background-color: #fff;
-    box-shadow: 10px 10px 15px hsla(0, 0%, 0%, 0.082);
+    box-shadow: 10px 10px 15px hsla(0, 0%, 0%, 0.062);
     transition: 0.4s;
 }
 
@@ -1115,7 +1209,11 @@ body{
     .mobileLetter .aboutLetter{
         color: #fff;
     }
-z
+
+    .accountMenu{
+        top: 6%;
+        right: 3%;
+    }
 
 }
 

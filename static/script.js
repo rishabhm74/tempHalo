@@ -17,6 +17,28 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
 });
 
 
+var accountMenuChecker = 0;
+
+document.getElementById("navLoginSignupbutton").addEventListener("click", ()=>{
+    if(accountMenuChecker == 0){
+        document.getElementById("navUserIcon").style.transform = "rotate(90deg)";
+        document.getElementById("navUserIcon").src = "static/assets/cross.svg";
+        document.getElementById("accountMenu").style.display = "block";
+        document.getElementById("accountMenu").style.height = "auto";
+        document.getElementById("accountMenu").style.width = "20rem";
+        accountMenuChecker = accountMenuChecker + 1;
+    }
+    else{
+        document.getElementById("navUserIcon").style.transform = "rotate(0deg)";
+        document.getElementById("navUserIcon").src = "static/assets/user.svg";
+        document.getElementById("accountMenu").style.display = "none";
+        document.getElementById("accountMenu").style.height = "0";
+        document.getElementById("accountMenu").style.width = "0";
+        accountMenuChecker = accountMenuChecker - 1;
+    }
+});
+
+
 
 document.getElementById("mainSearchBar").addEventListener("click", () =>{
     document.getElementById("mainSearchContainer").classList.add("expandedClass");
