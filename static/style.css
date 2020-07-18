@@ -114,7 +114,7 @@ body{
     background-color: #fff;
     border: 1px solid #eeeeee;
     border-radius: 0.5rem;
-    box-shadow: 5px 5px 15px hsla(0, 0%, 11%, 0.047);
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.047);
     animation-name: overlayVisible;
     animation-duration: 0.3s;
     display: none;
@@ -267,11 +267,11 @@ body{
 .learnMoreContainer button{
     border: none;
     background: none;
-    border: 1px solid #f8c724;
+    border: 1px solid #2af15c; /*f8c724*/
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: #ffcf2f;
+    background-color: #2fff8d; /*ffcf2f*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,7 +279,7 @@ body{
 }
 
 .learnMoreContainer button:hover{
-    background-color: #ffce2fb4;
+    background-color: #2fff8dc9; /*ffce2fb4*/
 }
 
 .learnMoreContainer button:focus{
@@ -527,6 +527,10 @@ body{
 
 }
 
+.howToAnserButton button:focus{
+    outline: none;
+}
+
 .howToAnserButton button:hover{
     color: #0066ff;
     border: 1px solid #005ae2;
@@ -541,11 +545,40 @@ body{
 .lettersHolder{
     height: auto; /*130 998*/
     width: 100%;
+    background-color: #FAFAFA;
 }
 
 .letterHolderTitleHolder{
+    width: 64%;
+    height: 153px; /*20*/
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.letterHolderTitleMain{
+    height: 100%;
     width: 100%;
-    height: 230px; /*30*/
+    border-top: 0.4rem  solid #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #474747;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.letterHolderSubitleMain{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    color: #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .mainLetterHolder{
@@ -559,15 +592,10 @@ body{
 .allBigLettersHoler{
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-.allBigLettersHoler{
-    height: 100%;
-    width: 100%;
-}
 
 .letteColumn1{
     background-color: ;
@@ -598,10 +626,78 @@ body{
     width: 95%;
     margin:  0 auto;
     background-color: ;
-    border: 1px solid #d8d8d8;
+    border: 1px solid rgb(245, 245, 245);
     margin-top: 1rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 55% 10% 35%;
+    transition: 0.3s ease-in-out;
 }
 
+.bigLetter:hover{
+    transform: scale(105%);
+    background-color: #1B1D1F;
+}
+
+.letterBig{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8.5rem;
+    color: rgb(233, 233, 233);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.letterBig span{
+    font-size: 3rem;
+    transition: 0.3s;
+}
+
+.letterSquare{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding:  0 2rem;
+    transition: 0.3s;
+}
+
+.letterSquare div{
+    height: 0.4rem;
+    width: 0.4rem;
+    background-color: rgb(224, 224, 224);
+    transition: 0.3s;
+}
+
+.aboutLetter{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    padding: 1rem 1.5rem 1.5rem 2rem;
+    transition: 0.3s;
+}
+
+.bigLetter:hover .letterBig{
+    color: #ffffff;
+}
+
+.bigLetter:hover .aboutLetter{
+    color: #ffffff;
+}
+
+.bigLetter:hover .letterSquare div{
+    background-color: #ffffff;
+}
+
+.extraSpaceAfterLetterHolder{
+    height: 115px; /*0.15*/
+    width: 100%;
+    background-color: #fafafa;
+}
 
 
 /* lettersHolder ends */
@@ -639,7 +735,7 @@ body{
         background-color: #fff;
         border: 1px solid #eeeeee;
         border-radius: 0.5rem;
-        box-shadow: 5px 5px 15px hsla(0, 0%, 11%, 0.047);
+        box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.047);
         animation-name: overlayVisible;
         animation-duration: 0.2s;
         display: none;
@@ -759,11 +855,11 @@ body{
     .learnMoreContainer button{
         border: none;
         background: none;
-        border: 1px solid #f8c724;
+        border: 1px solid #2af15c;
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        background-color: #ffcf2f;
+        background-color: #2fff8d;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -771,7 +867,7 @@ body{
     }
 
     .learnMoreContainer button:hover{
-        background-color: #ffce2fb4;
+        background-color: #2fff8dc9;
     }
 
     .learnMoreContainer button img{
@@ -914,6 +1010,97 @@ body{
         border: 1px solid #005ae2;
         background-color: #ffffff;
     }
+
+    .letterHolderTitleHolder{
+        width: 95%;
+        height: 115px; /*15*/
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 30% 65%;
+    }
     
+    .letterHolderTitleMain{
+        height: 100%;
+        width: 100%;
+        border-top: 0.4rem  solid #333333;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #474747;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 0.5rem;
+    }
+    
+    .letterHolderSubitleMain{
+        height: 100%;
+        width: 100%;
+        font-family: 'Poppins',sans-serif;
+        font-size: 0.8rem;
+        color: #474747;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+    
+    }
+
+    .mainLetterHolder{
+        background-color: ;
+        height: 768px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1% 96% 1%;
+    }
+
+    .allBigLettersHoler{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .letteColumn3{
+        display: none;
+    }
+
+
+    .bigLetter{
+        height: 40%;
+        width: 95%;
+        margin:  0 auto;
+        background-color: ;
+        border: 1px solid rgb(245, 245, 245);
+        margin-top: 1rem;
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: 40% 10% 50%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .letterBig{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6rem;
+        color: rgb(233, 233, 233);
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    
+    .letterBig span{
+        font-size: 3rem;
+        transition: 0.3s;
+    }
+
+    .aboutLetterB{
+        font-size: 0.7rem;
+    }
+
+    .aboutLetterC{
+        font-size: 0.7rem;
+    }
+
+
 }
 
