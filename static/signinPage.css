@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    background-color: #fafafa;
+}
+
+/* mainContainer starts */
+
+.mainContainer{
+    height: 100vh; /* 100*/
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background: #fff url('assets/bigBack.png') repeat 0 0;
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+/* mainCredentialsContainer starts */
+
+.mainCredentialsContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credentialsContainer form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mainCredentialsContainerInner{
+    height: 30rem;
+    width: 32.5%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #eeeeee;
+    box-shadow: 5px 5px 20px #0000000e;
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+
+}
+
+.greetingsContainer{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #aaaaaa;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credentialsContainer{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+}
+
+.inputContainer{
+    width: 75%;
+    background-color: ;
+    margin: 0.75rem auto;
+    border: 1px solid #e4e4e4;
+    border-radius: 0.4rem;
+}
+
+.inputContainer input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #3f3f3f;
+}
+
+
+.inputContainer input::placeholder{
+    color: #7a7a7a;
+}
+
+.inputContainerPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inputContainerPassword input{
+    width: 85%;
+    outline: none;
+}
+
+.inputContainerPassword input:focus{
+    outline: none;
+}
+
+.inputContainerPassword .passwordIconContainer{
+    width: 15%;
+    height: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainerPassword .passwordIconContainer img{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.signinButton{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid #9974ff;
+    border-radius: 0.4rem;
+    background-color: #956eff;
+    color: #fff;
+    margin: 0.75rem auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signinButton:hover{
+    background-color: #fff;
+    color: #956eff;
+}
+
+.alreadyAccountContainer{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #a5a5a5;
+}
+
+.alreadyAccountContainer a{
+    color: #FF3679;
+}
+
+/* mainCredentialsContainer ends */
+
+
+.pageFooter{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #eeeeee;
+    box-shadow: 0px -5px 15px #20202009;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.pageFooter a{
+    text-decoration: none;
+    color: #a8a8a8;
+    transition: 0.3s;
+    font-weight: 300;
+}
+
+.pageFooter span{
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.pageFooter a:hover{
+    color: #5e5e5e;
+}
+
+
+
+
+
+
+/* mainContainer ends */
+
+
+/* media queries starts */
+
+@media (max-width: 1280px){
+
+    .mainContainer{
+        height: 640px; /* 100*/
+        max-height: 640px;
+    }
+
+    .mainCredentialsContainerInner{
+        height: 25rem;
+        width: 85%;
+    }
+
+    .greetingsContainer{
+        font-size: 1.5rem;
+    }
+
+    .inputContainer{
+        width: 85%;
+    }
+    .alreadyAccountContainer{
+        padding-top: 1rem;
+    }
+
+    .inputContainer input{
+        padding: 0.75rem 1rem;
+    }
+}
+
+
+/* media queries ends */

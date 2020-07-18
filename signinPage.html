@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Halo Dictionary</title>
+    <link rel="stylesheet" href="static/signinPage.css">
+</head>
+<body>
+    
+    <!-- mainContainer starts -->
+
+    <div class="mainContainer">
+        <div class="mainCredentialsContainer">
+            <div class="mainCredentialsContainerInner">
+                <div class="greetingsContainer">
+                    Welcome
+                </div>
+                <div class="credentialsContainer">
+                    <form action="#">
+                        <div class="inputContainer inputContainerEmail">
+                            <input placeholder="Email" type="email" name="" id="emailInput" required>
+                        </div>
+                        <div class="inputContainer inputContainerPassword">
+                            <input placeholder="Password" type="password" name="" id="passwordInput" required>
+                            <div class="passwordIconContainer">
+                                <img id="passwordVisibleIcon" src="static/assets/hiddenPassword.svg">
+                            </div>
+                        </div>
+                        <button type="submit" class="signinButton">Sign In</button>
+                    </form>
+                </div>
+                <div class="alreadyAccountContainer">
+                    To create a new account, <a href="#">click here</a>.
+                </div>
+            </div>
+        </div>
+
+        <div class="pageFooter">
+            <a href="index.html">halo<span>dictionary</span></a>
+        </div>
+    </div>
+
+    <!-- mainContainer ends -->
+
+
+    <script src="static/signinPageScript.js"></script>
+</body>
+</html>
