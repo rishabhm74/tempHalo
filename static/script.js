@@ -4,14 +4,14 @@ var sideMenuChecker = 0;
 document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
     if(sideMenuChecker == 0){
         document.getElementById("sideMenu").style.display = "block";
-        document.getElementById("sideMenuOpenIcon").src = "static/assets/cross.svg";
         document.getElementById("sideMenuOpen").style.transform = "rotate(90deg)";
+        document.getElementById("sideMenuOpenIcon").src = "static/assets/cross.svg";
         sideMenuChecker = sideMenuChecker + 1;
     }
     else{
         document.getElementById("sideMenu").style.display = "none";
-        document.getElementById("sideMenuOpenIcon").src = "static/assets/menu.svg";
         document.getElementById("sideMenuOpen").style.transform = "rotate(0deg)";
+        document.getElementById("sideMenuOpenIcon").src = "static/assets/menu.svg";
         sideMenuChecker = sideMenuChecker - 1;
     }
 });

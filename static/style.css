@@ -72,7 +72,7 @@ body{
     opacity: 0.6; /*0.3*/
     height: 1.5rem; 
     width: 1.5rem;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .menuOpen{
@@ -171,7 +171,7 @@ body{
     z-index: 13;
     top: 5%;
     right: 2%;
-    box-shadow: -5px 5px 10px hsla(0, 0%, 0%, 0.047);
+    box-shadow: -5px 5px 15px hsla(0, 0%, 0%, 0.089);
     display: grid;
     grid-template-rows: 70% 30%;
     overflow: hidden;
@@ -225,7 +225,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #dddddd;
     font-size: 1rem;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 3rem;
     transition: 0.3s;
 }
 
@@ -234,7 +234,7 @@ body{
 }
 
 .userLoginSignupContainer li:last-child{
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .userLoginSignupContainer li:first-child a{
