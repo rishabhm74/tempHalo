@@ -53,7 +53,7 @@ body{
     border-top: none;
     box-shadow: 5px 5px 20px #0000000e;
     display: grid;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-rows: 25% 60% 15%;
 }
 
 .greetingsContainer{
@@ -67,7 +67,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 0.5rem solid #875cff;
+    border-top: 0.5rem solid #ff3f7f;
     border-radius: 0.5rem 0.5rem 0;
 }
 
@@ -139,9 +139,9 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     padding: 0.5rem 2rem;
-    border: 1px solid #9974ff;
+    border: 1px solid #FF3679;
     border-radius: 0.4rem;
-    background-color: #956eff;
+    background-color: #FF3679;
     color: #fff;
     margin: 0.75rem auto;
     cursor: pointer;
@@ -150,7 +150,7 @@ body{
 
 .signinButton:hover{
     background-color: #fff;
-    color: #956eff;
+    color: #FF3679;
 }
 
 .alreadyAccountContainer{
@@ -160,10 +160,24 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     color: #a5a5a5;
+    padding-top: 1.25rem;
 }
 
 .alreadyAccountContainer a{
-    color: #FF3679;
+    color: #956eff;
+}
+
+.passwordNotSame{
+    width: 75%;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    color: red;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 /* mainCredentialsContainer ends */
@@ -218,13 +232,13 @@ body{
     }
 
     .mainCredentialsContainerInner{
-        height: 25rem;
+        height: 28rem;
         width: 88%;
     }
 
     .mainCredentialsContainerInner{
         display: grid;
-        grid-template-rows: 25% 50% 20%;
+        grid-template-rows: 20% 70% 10%;
     
     }
 
@@ -236,7 +250,7 @@ body{
         width: 88%;
     }
     .alreadyAccountContainer{
-        padding-top: 1rem;
+        padding-top: 0rem;
     }
 
     .inputContainer input{

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In | Halo Dictionary</title>
-    <link rel="stylesheet" href="static/signinPage.css">
+    <title>Sign Up | Halo Dictionary</title>
+    <link rel="stylesheet" href="static/signUpPage.css">
 </head>
 <body>
     
@@ -21,17 +21,30 @@
                         <div class="inputContainer inputContainerEmail">
                             <input placeholder="Email" type="email" name="" id="emailInput" required>
                         </div>
+
                         <div class="inputContainer inputContainerPassword">
                             <input placeholder="Password" type="password" name="" id="passwordInput" required>
                             <div class="passwordIconContainer">
                                 <img id="passwordVisibleIcon" src="static/assets/hiddenPassword.svg">
                             </div>
                         </div>
+
+                        <div class="inputContainer inputContainerPassword">
+                            <input placeholder="Re-enter password" type="password" name="" id="repasswordInput" required>
+                            <div class="passwordIconContainer">
+                                <img id="repasswordVisibleIcon" src="static/assets/hiddenPassword.svg">
+                            </div>
+                        </div>
+
+                        <div class="passwordNotSame" id="passwordNotSame">
+                            Passwords don't match!
+                        </div>
+                        
                         <button type="submit" class="signinButton">Sign In</button>
                     </form>
                 </div>
                 <div class="alreadyAccountContainer">
-                    To create a new account, <a href="signUpPage.html">click here</a>.
+                    To create a new account, <a href="signinPage.html">click here</a>.
                 </div>
             </div>
         </div>
@@ -44,6 +57,6 @@
     <!-- mainContainer ends -->
 
 
-    <script src="static/signinPageScript.js"></script>
+    <script src="static/signUpPageScript.js"></script>
 </body>
 </html>
