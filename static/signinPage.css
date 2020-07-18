@@ -53,7 +53,6 @@ body{
     box-shadow: 5px 5px 20px #0000000e;
     display: grid;
     grid-template-rows: 30% 50% 20%;
-
 }
 
 .greetingsContainer{
@@ -217,7 +216,13 @@ body{
 
     .mainCredentialsContainerInner{
         height: 25rem;
-        width: 85%;
+        width: 88%;
+    }
+
+    .mainCredentialsContainerInner{
+        display: grid;
+        grid-template-rows: 25% 50% 20%;
+    
     }
 
     .greetingsContainer{
@@ -225,7 +230,7 @@ body{
     }
 
     .inputContainer{
-        width: 85%;
+        width: 88%;
     }
     .alreadyAccountContainer{
         padding-top: 1rem;
