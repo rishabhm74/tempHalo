@@ -415,7 +415,7 @@ body{
     border: 1px solid #f0f0f0;
     border-radius: 0.5rem;
     background-color: #fff;
-    box-shadow: 10px 10px 20px hsla(0, 0%, 35%, 0.082);
+    box-shadow: 10px 10px 15px hsla(0, 0%, 0%, 0.082);
     transition: 0.4s;
 }
 
@@ -1115,7 +1115,26 @@ body{
     .mobileLetter .aboutLetter{
         color: #fff;
     }
+    
+    .bigLetterA{
+        background-color: #a3ffb7;
+        border: 1px solid #7ef197;
+    }
 
+    .bigLetterB{
+        background-color: #ffbe82;
+        border: 1px solid #ebaa6e;
+    }
+
+    .bigLetterC{
+        background-color: #a6cfff;
+        border: 1px solid #7aabe4;
+    }
+
+    .bigLetterD{
+        background-color: #ffe68b;
+        border: 1px solid #f1d777;
+    }
 
 }
 
