@@ -633,7 +633,7 @@ body{
         width: auto;
         position: fixed;
         overflow: hidden;
-        top: 5.5%;
+        top: 6%;
         left: 3%;
         z-index: 12;
         background-color: #fff;
@@ -645,6 +645,9 @@ body{
         display: none;
     }
     
+    .sideMenu li a{
+        opacity: 0.7;
+    }
 
     .heroSection{
         overflow: hidden;
@@ -756,11 +759,11 @@ body{
     .learnMoreContainer button{
         border: none;
         background: none;
-        border: 1px solid #0a0a0a31;
+        border: 1px solid #f8c724;
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        background-color: #0a0a0a50;
+        background-color: #ffcf2f;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -768,7 +771,7 @@ body{
     }
 
     .learnMoreContainer button:hover{
-        background-color: rgba(0, 0, 0, 0.61);
+        background-color: #ffce2fb4;
     }
 
     .learnMoreContainer button img{
