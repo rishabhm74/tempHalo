@@ -699,7 +699,6 @@ body{
     background-color: #fafafa;
 }
 
-
 /* lettersHolder ends */
 
 
@@ -1099,6 +1098,22 @@ body{
 
     .aboutLetterC{
         font-size: 0.7rem;
+    }
+
+    .mobileLetter{
+        background-color: #1B1D1F;
+    }
+
+    .mobileLetter .letterBig{
+        color: #fff;
+    }
+
+    .mobileLetter .letterSquare div{
+        background-color: #fff;
+    }
+
+    .mobileLetter .aboutLetter{
+        color: #fff;
     }
 
 
