@@ -229,6 +229,10 @@ body{
     
     }
 
+    .credentialsContainer{
+        margin-top: 1rem;
+    }
+
     .greetingsContainer{
         font-size: 1.5rem;
     }
@@ -237,7 +241,7 @@ body{
         width: 88%;
     }
     .alreadyAccountContainer{
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 
     .inputContainer input{

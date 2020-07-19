@@ -246,6 +246,8 @@ body{
 
     .greetingsContainer{
         font-size: 1.5rem;
+        background: #fff url('assets/signUpbaackMobile.png') repeat 0 0;
+        background-size: cover;
     }
 
     .credentialsContainer{
