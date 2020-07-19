@@ -1416,8 +1416,12 @@ body{
         margin: 0 auto;
     }
 
+
+    .smallLetter{
+        text-align: right;
+    }
+
     .footer{
-        height: 307px;
         width: 100%;
         flex-direction: column;
     }
@@ -1434,20 +1438,27 @@ body{
     }
 
     .footerNavigation{
-        height: 80%;
+        height: 75%;
         width: 100%;
     }
 
     .footerList{
-        padding-top: 1rem;
         display: grid;
         grid-template-columns: auto auto;
         background-color: ;
+        height: 80%;
+        width: 100%;
+        padding-top:2rem ;
     }
 
     .footerList li{
         list-style: none;
         padding: 0.75rem 2rem;
+        text-align: center;
+    }
+
+    .footerList li a{
+        color: #bdbdbd;
     }
 
     .madeBy{
@@ -1457,6 +1468,7 @@ body{
         justify-content: center;
         align-items: center;
         color: rgb(153, 153, 153);
+        height: 25%;
     }
 
     .madeBy span{

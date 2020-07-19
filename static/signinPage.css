@@ -67,10 +67,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-top: 0.5rem solid #875cff; */
+    border-top: 0.5rem solid #875cff;
     border-radius: 0.5rem 0.5rem 0 0;
-    background: #fff url('assets/signInbaack.png') repeat 0 0;
-    background-size: cover;
+    /* background: #fff url('assets/signInbaack.png') repeat 0 0;
+    background-size: cover; */
 }
 
 .credentialsContainer{
