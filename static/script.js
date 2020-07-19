@@ -1,4 +1,6 @@
 var sideMenuChecker = 0;
+var accountMenuChecker = 0;
+var allLettersVisible = 0;
 
 
 document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
@@ -17,7 +19,6 @@ document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
 });
 
 
-var accountMenuChecker = 0;
 
 document.getElementById("navLoginSignupbutton").addEventListener("click", ()=>{
     if(accountMenuChecker == 0){
@@ -47,7 +48,7 @@ document.getElementById("mainSearchBar").addEventListener("click", () =>{
     document.getElementById("mainSearchContainer").style.boxShadow = "0px 0px 0px #00000000";
     document.getElementById("mainSearchContainer").style.borderRadius = "0rem";
     document.getElementById("mainSearchContainer").style.borderBottom = "2px solid orange";
-})
+});
 
 document.getElementById("closeMainSearchContainer").addEventListener("click", () =>{
     document.getElementById("mainSearchContainer").classList.remove("expandedClass");
@@ -57,4 +58,22 @@ document.getElementById("closeMainSearchContainer").addEventListener("click", ()
     document.getElementById("mainSearchContainer").style.boxShadow = "1rem 1rem 15px #00000013";
     document.getElementById("mainSearchContainer").style.borderRadius = "0.3rem";
     document.getElementById("mainSearchContainer").style.border = "none";
-})
+});
+
+
+document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
+    if(allLettersVisible == 0){
+        document.getElementById("smallLetterHolder").style.height = "auto";
+        document.getElementById("smallLetterHolder").style.padding = "2rem";
+        allLettersVisible = allLettersVisible + 1;
+        window.scrollTo({
+            top: (document.getElementById("smallLetterHolder").offsetTop),
+            behavior: 'smooth',
+        });
+    }
+    else{
+        document.getElementById("smallLetterHolder").style.height = "0";
+        document.getElementById("smallLetterHolder").style.padding = "0";
+        allLettersVisible = allLettersVisible - 1;
+    }
+});

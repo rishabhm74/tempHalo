@@ -822,9 +822,168 @@ body{
     height: 115px; /*0.15*/
     width: 100%;
     background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.showMoreLetterButton{
+    border: 1px solid #e0ae24;
+    background-color: #ffcb3b;
+    padding:  0.75rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.showMoreLetterButton:hover{
+    transform: scale(105%);
+    box-shadow: 0px 5px 10px #0000001e;
+}
+
+.smallLetterHolder{
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1B1D1F;
+    transition: 0.5s;
+}
+
+.smallLetterMain{
+    height: 100%;
+    width: 90%;
+    background-color: ;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-row-gap: 0.75rem;
+    grid-column-gap: 0.5rem;
+}
+
+.smallLetter{
+    height: 5rem;
+    width:5rem;
+    background-color: ; /*1B1D1F*/
+    color: #ffffff; /*29*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    padding-top: 1rem;
+    padding-right: 0.25rem;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+
+.smallLetter span{
+    font-size: 1.5rem;
+}
+
+.smallLetter:hover{
+    background-color: #fafafa;
+    color: #1B1D1F;
+    transform: scale(90%);
+}
+
+
+
 /* lettersHolder ends */
+
+
+/* footer starts */
+
+.footer{
+    height: 384px; /*50*/
+    border-top: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerLogo{
+    height: 100%;
+    width: 35%;
+    background-color: ;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footerLogo a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #afafaf;
+    font-weight: 300;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.footerLogo a span{
+    font-weight: 500;
+}
+
+.footerLogo a:hover{
+    color: #6e6e6e;
+}
+
+
+.footerNavigation{
+    height: 100%;
+    width: 65%;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerList{
+    height: 85%;
+    width: 100%;
+    padding-top:2rem ;
+}
+
+.footerList li{
+    list-style: none;
+    padding: 0.75rem 2rem;
+}
+
+.footerList li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #aaaaaa;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.footerList li a:hover{
+    color: #ffa44f;
+    text-decoration:  underline;
+}
+
+
+
+.madeBy{
+    height: 15%;
+    width: 100%;
+    background-color: ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: rgb(100, 100, 100);
+    font-weight: 300;
+    padding: 0 2rem;
+    text-align: right;
+}
+
+.madeBy span{
+    color: rgb(255, 82, 111);
+}
+
+/* footer ends */
 
 
 
@@ -1244,6 +1403,64 @@ body{
     .accountMenu{
         top: 6%;
         right: 3%;
+    }
+
+    .smallLetterMain{
+        height: 100%;
+        width: 90%;
+        background-color: ;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 0.75rem;
+        grid-column-gap: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .footer{
+        height: 307px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .footerLogo{
+        height: 20%;
+        width: 100%;
+        background-color: ;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerNavigation{
+        height: 80%;
+        width: 100%;
+    }
+
+    .footerList{
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: ;
+    }
+
+    .footerList li{
+        list-style: none;
+        padding: 0.75rem 2rem;
+    }
+
+    .madeBy{
+        font-size: 0.75rem;
+        border-top: 1px solid #e9e9e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(153, 153, 153);
+    }
+
+    .madeBy span{
+        padding: 0 0.15rem;
     }
 
 }
