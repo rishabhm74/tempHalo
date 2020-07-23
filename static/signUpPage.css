@@ -144,7 +144,7 @@ body{
     padding: 0.5rem 2rem;
     border: 1px solid #FF3679;
     border-radius: 0.4rem;
-    background-color: #FF3679;
+    background-color: #ff287a;
     color: #fff;
     margin: 0.75rem auto;
     cursor: pointer;
@@ -181,6 +181,10 @@ body{
     opacity: 0;
     transition: 0.3s;
     padding: 0 1rem;
+}
+
+#emailInput:focus{
+    outline: none;
 }
 
 /* mainCredentialsContainer ends */

@@ -70,10 +70,12 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
             top: (document.getElementById("smallLetterHolder").offsetTop),
             behavior: 'smooth',
         });
+        document.getElementById("showMoreLetterButton").innerHTML = "Show less";
     }
     else{
         document.getElementById("smallLetterHolder").style.height = "0";
         document.getElementById("smallLetterHolder").style.padding = "0";
         allLettersVisible = allLettersVisible - 1;
+        document.getElementById("showMoreLetterButton").innerHTML = "Show more";
     }
 });

@@ -168,6 +168,12 @@ body{
     color: #FF3679;
 }
 
+#emailInput:focus{
+    outline: none;
+}
+
+
+
 /* mainCredentialsContainer ends */
 
 
