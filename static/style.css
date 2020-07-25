@@ -1091,7 +1091,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .footerNavLi li{
@@ -1658,6 +1658,7 @@ body{
         align-items: center;
         height: 100%;
         justify-content: space-around;
+        border-left: 0px ;
     }
 
     .navSocial{
