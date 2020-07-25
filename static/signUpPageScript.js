@@ -43,3 +43,40 @@ document.getElementById("repasswordInput").addEventListener("keyup", ()=>{
         document.getElementById("passwordNotSame").style.opacity = "0";
     }
 }); 
+
+
+var emailInputValue;
+document.getElementById("emailInput").addEventListener("keyup", function(){
+    emailInputValue = this.value;
+    emailInputValue = emailInputValue.replace(/<|>|&|%|!|#/gi, "");
+    emailInputValue = emailInputValue.replace("$", "");
+    emailInputValue = emailInputValue.replace("^", "");
+    emailInputValue = emailInputValue.replace("*", "");
+    emailInputValue = emailInputValue.replace("+", "");
+    emailInputValue = emailInputValue.replace("-", "");
+    emailInputValue = emailInputValue.replace("=", "");
+    emailInputValue = emailInputValue.replace("/", "");
+    emailInputValue = emailInputValue.replace("?", "");
+    emailInputValue = emailInputValue.replace(":", "");
+    emailInputValue = emailInputValue.replace("{", "");
+    emailInputValue = emailInputValue.replace("}", "");
+    emailInputValue = emailInputValue.replace("[", "");
+    emailInputValue = emailInputValue.replace("]", "");
+    emailInputValue = emailInputValue.replace("|", "");
+    emailInputValue = emailInputValue.replace(";", "");
+    emailInputValue = emailInputValue.replace(",", "");
+    emailInputValue = emailInputValue.replace("'", "");
+    emailInputValue = emailInputValue.replace(" ", "");
+
+    console.log(emailInputValue);
+    this.value = emailInputValue;
+});
+
+
+document.getElementById("passwordInput").addEventListener("keyup", function(){
+    this.value = this.value.replace(/<|>|&|%/gi, "");
+})
+
+document.getElementById("repasswordInput").addEventListener("keyup", function(){
+    this.value = this.value.replace(/<|>|&|%/gi, "");
+})
