@@ -1091,7 +1091,7 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
-
+    text-align: right;
 }
 
 
@@ -1624,7 +1624,7 @@ body{
         background-color: ;
         justify-content: flex-start;
         align-items: flex-start;
-    
+        text-align: center;
     }
     
 
