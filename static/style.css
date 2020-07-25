@@ -865,6 +865,10 @@ body{
     transform: scale(103%);
 }
 
+.showMoreLetterButton:focus{
+    outline: none;
+}
+
 .smallLetterHolder{
     height: 0;
     width: 100%;
@@ -922,33 +926,94 @@ body{
     background-color: #fafafa;
 }
 
+/* getStarted starts */
+
+.getStarted{
+    height: 230px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getStartedInner{
+    height: 70%;
+    width: 60%;
+    background-color: #fff;
+    background: linear-gradient(to right, #FFA05B, #FE5D76);
+    box-shadow: 0px 5px 15px #5e5e5e10;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.getStartedTitle{
+    background-color: ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0rem 4rem 0 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.getStartedButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ;
+}
+
+.getStartedButton button{
+    background-color: #ffa44f00;
+    
+}
+
+.getStartedButton button a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.getStartedButton button a:hover{
+    color: #062528;
+    background-color: #fff;
+}
+
+
+/* getStarted ends */
+
 
 /* footer starts */
 
 .footer{
-    height: 460px; /*60*/
+    height: 230px; /*60 460*/
     /* background: linear-gradient(45deg, #ffdc15, #ff8513); */
     /* background: linear-gradient(45deg, #fffc51, #ff8b48); */
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
     background-color: #062528;
     flex-direction: column;
     border-bottom: 1rem solid #F25056;
 }
 
 .innerMainfooter{
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footerRibbon{
-    height: 50%;
-    width: 100%;
-    background-color: #fafafa;
-}
+
 
 .innerFooter{
     width: 80%;
@@ -1411,16 +1476,16 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -1.5rem;
-        margin-right: -6rem;
+        margin-top: -2.2rem;
+        margin-right: -5.25rem;
     }
 
 
     .userSettingIcon{
-        height: 1.75rem;
-        width: 1.75rem;
+        height: 2.2rem;
+        width: 2.2rem;
         background-color: #fff;
-        padding: 0.3rem;
+        padding: 0.5rem;
         border-radius: 50%;
         transition: 0.6s;
     }
@@ -1555,11 +1620,9 @@ body{
 
     .footer{
         border-bottom: 0.75rem solid #F25056;
+        height: 460px;
     }
 
-    .footerRibbon{
-        height: 0;
-    }
 
     .innerMainfooter{
         height: 100%;
@@ -1623,7 +1686,29 @@ body{
         text-align: center;
         padding: 0 0 ;
     }
-    
+
+    .getStartedInner{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 85%;
+    }
+
+    .getStartedTitle{
+        justify-content: center;
+        font-size: 1.25rem;
+        padding: 0 0 0 0;
+        height: 50%;
+    }
+
+    .getStartedButton{
+        height: 30%;
+    }
+
+    .getStartedButton button a{
+        background-color: #fff;
+        color: #062528;
+    }
 
 }
 
