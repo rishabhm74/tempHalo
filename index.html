@@ -42,13 +42,16 @@
 
     <div class="accountMenu" id="accountMenu">
         <div class="userAvatarContainer">
-            <img class="userProfileAvatarImg" src="static/assets/defaultUserAvatar.png" alt="">
-            <div class="userUsername notSignedIn">
+            <img class="userProfileAvatarImg" src="static/assets/defaultUserAvatar.png">
+            <a class="userSettingHolder" href="userSettings.html">
+                <img class="userSettingIcon" src="static/assets/setting.svg" alt="">
+            </a>
+            <div class="userUsername notSignedIn" id="userUsername">
                 Not yet authorized?
             </div>
         </div>
         <div class="userLoginSignupContainer">
-            <li class="signInbutton" id="signInbutton"><a href="signinPage.html">Sign In</a></li>
+            <li class="signInbutton" id="signInbutton"><a href="signinPage.html">Log In</a></li>
             <li class="signUpbutton" id="signUpbutton"><a href="signUpPage.html">Sign Up</a></li>
             <div class="signOutButtonHolder">
                 <button class="signOutButton">Sign Out</button>
