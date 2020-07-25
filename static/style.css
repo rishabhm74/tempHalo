@@ -1088,10 +1088,8 @@ body{
     font-size: 0.75rem;
     color: #fff;
     font-weight: 400;
-    display: flex;
-    justify-content: right;
-    align-items: center;
     text-align: right;
+    padding: 1rem 0;
 }
 
 
@@ -1622,9 +1620,8 @@ body{
 
     .copyRight{
         background-color: ;
-        justify-content: flex-start;
-        align-items: flex-start;
         text-align: center;
+        padding: 0 0 ;
     }
     
 
