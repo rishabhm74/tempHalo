@@ -7,3 +7,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: auto;
+}
+
+/* mainOuterContainer starts */
+
+.mainOuterContainer{
+    height: 667px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #143fa3, #9B6AF0);
+}
+
+
+/* leftContainer starts */
+
+.leftContainer{
+    width: 25%;
+}
+
+
+/* leftContainer ends */
+
+/* rightContainer starts */
+
+.rightContainer{
+    width: 75%;
+    background-color: #fff;
+    border-radius: 1.5rem 0 0 1.5rem;
+    box-shadow: -1.5rem 0 15px #00000014;
+}
+
+
+
+/* rightContainer ends */
+
+
+/* mainOuterContainer ends */
+
+
+
+@media (max-width: 1280px){
+
+    .mainOuterContainer{
+        flex-direction: column;
+        background: linear-gradient(to bottom, #1545b6, #9B6AF0, #9B6AF0, #9B6AF0);
+    }
+
+    .leftContainer{
+        height: 25%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .rightContainer{
+        height: 75%;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 1.5rem 1.5rem 0 0rem;
+        box-shadow: 0rem -1rem 10px #00000010;
+    }
+
+}
