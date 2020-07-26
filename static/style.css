@@ -878,6 +878,8 @@ body{
     overflow: hidden;
     background-color: #eeeeee;
     background: url('assets/lettersBack.png') #eeeeee;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: 0.5s;
 }
 
