@@ -870,13 +870,14 @@ body{
 }
 
 .smallLetterHolder{
-    height: 0;
+    height: 0; /* 304 816*/
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #1B1D1F;
+    background-color: #eeeeee;
+    background: url('assets/lettersBack.png') #eeeeee;
     transition: 0.5s;
 }
 
@@ -1469,6 +1470,20 @@ body{
         color: #0066ff;
         border: 1px solid #005ae2;
         background-color: #ffffff;
+    }
+
+    .smallLetterHolder{
+        height: 0; /* 304 816*/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: #eeeeee;
+        background: url('assets/lettersBackmob.png') #eeeeee;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        transition: 0.5s;
     }
 
 
