@@ -870,7 +870,7 @@ body{
 }
 
 .smallLetterHolder{
-    height: 0; /* 304 816*/
+    height: auto; /* 304 816*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -880,7 +880,7 @@ body{
     background: url('assets/lettersBack.png') #eeeeee;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: center right bottom;
     transition: 0.5s;
 }
 
@@ -907,7 +907,7 @@ body{
     align-items: baseline;
     padding-top: 1rem;
     padding-right: 0.25rem;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     transition: 0.3s;
 }
 
