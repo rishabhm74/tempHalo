@@ -65,6 +65,8 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
     if(allLettersVisible == 0){
         document.getElementById("smallLetterHolder").style.height = "auto";
         document.getElementById("smallLetterHolder").style.padding = "2rem";
+        document.getElementById("smallLetterHolder").style.borderTop = "1px solid #dbdbdb";
+        document.getElementById("smallLetterHolder").style.borderBottom = "1px solid #dbdbdb";
         allLettersVisible = allLettersVisible + 1;
         window.scrollTo({
             top: (document.getElementById("smallLetterHolder").offsetTop),
@@ -75,6 +77,8 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
     else{
         document.getElementById("smallLetterHolder").style.height = "0";
         document.getElementById("smallLetterHolder").style.padding = "0";
+        document.getElementById("smallLetterHolder").style.borderTop = "none";
+        document.getElementById("smallLetterHolder").style.borderBottom = "none";
         allLettersVisible = allLettersVisible - 1;
         document.getElementById("showMoreLetterButton").innerHTML = "Show more";
     }
