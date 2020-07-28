@@ -3,6 +3,8 @@ var accountMenuChecker = 0;
 var allLettersVisible = 0;
 
 
+
+
 document.getElementById("sideMenuOpen").addEventListener("click", ()=>{
     if(sideMenuChecker == 0){
         document.getElementById("sideMenu").style.display = "block";
@@ -27,6 +29,11 @@ document.getElementById("navLoginSignupbutton").addEventListener("click", ()=>{
         document.getElementById("accountMenu").style.display = "block";
         document.getElementById("accountMenu").style.height = "auto";
         document.getElementById("accountMenu").style.width = "20rem";
+
+        // document.getElementById("signInbutton").style.display = "none";
+        // document.getElementById("signUpbutton").style.display = "none";
+        // document.getElementById("signOutButton").style.display = "block";
+
         accountMenuChecker = accountMenuChecker + 1;
     }
     else{
@@ -102,9 +109,11 @@ document.getElementById("mainSearchBar").addEventListener("keyup", ()=>{
     document.getElementById("innerMost").style.borderTop = "none";
     var tempVal = document.getElementById("mainSearchBar").value;
     if(tempVal.length > 0){
-        if(document.getElementById("innerMost").childElementCount <= 5){
-            currentEntry += `<li class="suggestionList">${tempVal}</li>`
-            document.getElementById("innerMost").innerHTML = currentEntry;
+        if(tempVal[tempVal.length - 1] != " "){
+            if(document.getElementById("innerMost").childElementCount <= 5){
+                currentEntry += `<li class="suggestionList">${tempVal}</li>`
+                document.getElementById("innerMost").innerHTML = currentEntry;
+            }
         }
     }
     else{
