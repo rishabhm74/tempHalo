@@ -877,10 +877,10 @@ body{
 
 .smallLetterMain{
     height: 100%;
-    width: 90%;
+    width: 78%;
     background-color: ;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto ;
     grid-row-gap: 0.75rem;
     grid-column-gap: 0.5rem;
     padding: 4rem 0;
@@ -894,13 +894,20 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: baseline;
     padding-top: 1rem;
     padding-right: 0.25rem;
-    border: 1px solid #292929;
+    border: 1px solid #6d6d6d;
     transition: 0.3s;
+    padding-left: 0.5rem;
 }
+/* 
+.letterBoxSmall{
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #292929;
+} */
 
 .smallLetter span{
     font-size: 1.5rem;

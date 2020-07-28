@@ -54,7 +54,7 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
             top: (document.getElementById("smallLetterHolder").offsetTop),
             behavior: 'smooth',
         });
-        document.getElementById("showMoreLetterButton").innerHTML = "Show less";
+        document.getElementById("showMoreLetterButton").innerHTML = "Hide";
     }
     else{
         document.getElementById("smallLetterHolder").style.height = "0";
@@ -102,7 +102,7 @@ document.getElementById("mainSearchBar").addEventListener("keyup", ()=>{
     document.getElementById("innerMost").style.borderTop = "none";
     var tempVal = document.getElementById("mainSearchBar").value;
     if(tempVal.length > 0){
-        if(document.getElementById("innerMost").childElementCount <=6){
+        if(document.getElementById("innerMost").childElementCount <= 5){
             currentEntry += `<li class="suggestionList">${tempVal}</li>`
             document.getElementById("innerMost").innerHTML = currentEntry;
         }
