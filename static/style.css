@@ -445,19 +445,21 @@ body{
 /* expanded class starts */
 
 
-.overlay{
-    z-index: 17;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    height: 768px;
-    max-height: 768px;
-    width: 100vw;
+
+/* .overlay{
+    height: 100vh;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
     animation-name: overlayVisible;
     animation-duration: 0.4s;
-    display: none; /* changed */
-}
+    display: none;
+}*/
+
+
 
 @keyframes overlayVisible{
     from{
@@ -468,13 +470,6 @@ body{
     }
 }
 
-.expandedClass{
-    z-index: 20;
-    position: absolute;
-    top: 1rem;
-    width: 80%;
-    transition: all 0.5s;
-}
 
 
 /* expanded class ends */
@@ -1665,17 +1660,13 @@ body{
         color: #062528;
     }
 
-
-    .overlay{
+    /* .overlay{
         height: 768px;
         max-height: 768px;
-
     }
+ */
 
-    .expandedClass{
-        top: 0rem;
-        width: 90%;
-    }
+
 
 
 

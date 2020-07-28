@@ -68,12 +68,24 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
 
 
 
-document.getElementById("mainSearchBar").addEventListener("click", ()=>{
-    document.getElementById("mainSearchContainer").classList.add("expandedClass");
-    document.getElementById("overlay").style.display = "block";
-});
+// document.getElementById("mainSearchBar").addEventListener("click", ()=>{
+//     document.getElementById("mainSearchContainer").classList.add("expandedClass");
+//     document.getElementById("overlay").style.display = "block";
+//     document.body.style.height = "768px";
+// });
 
-document.getElementById("overlay").addEventListener("click", ()=>{
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("mainSearchContainer").classList.remove("expandedClass");
+// document.getElementById("overlay").addEventListener("click", ()=>{
+//     document.getElementById("overlay").style.display = "none";
+//     document.getElementById("mainSearchContainer").classList.remove("expandedClass");
+//     document.body.style.height = "auto";
+// });
+
+document.getElementById("mainSearchBar").addEventListener("click", ()=>{
+    var temp = document.getElementById("mainSearchContainer").offsetTop;
+    var temp2 =document.getElementById("navbar").clientHeight;
+    var temp3 = temp - temp2 - 15;
+    window.scrollTo({
+        top: temp3,
+        behavior: 'smooth',
+    });
 });
