@@ -1666,9 +1666,11 @@ body{
 
 
     .expandedClass{
-        top: -0.25rem;
+        top: 0.25rem;
         width: 94%;
     }
+
+
 
 }
 
