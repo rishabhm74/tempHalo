@@ -80,6 +80,8 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
 //     document.body.style.height = "auto";
 // });
 
+
+
 document.getElementById("mainSearchBar").addEventListener("click", ()=>{
     var temp = document.getElementById("mainSearchContainer").offsetTop;
     var temp2 =document.getElementById("navbar").clientHeight;
@@ -88,4 +90,15 @@ document.getElementById("mainSearchBar").addEventListener("click", ()=>{
         top: temp3,
         behavior: 'smooth',
     });
+    document.getElementById("mainSearchContainer").classList.add("overlaySearch");
+    document.getElementById("overlay").style.display = "block";
+});
+
+
+var currentEntry = ``;
+
+document.getElementById("mainSearchBar").addEventListener("keyup", ()=>{
+    var tempVal = document.getElementById("mainSearchBar").value;
+    currentEntry += `<li class="suggestionList">${tempVal}</li>`
+    document.getElementById("innerMost").innerHTML = currentEntry;
 });
