@@ -71,11 +71,9 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
 document.getElementById("mainSearchBar").addEventListener("click", ()=>{
     document.getElementById("mainSearchContainer").classList.add("expandedClass");
     document.getElementById("overlay").style.display = "block";
-    document.body.style.overflowY = "hidden";
 });
 
 document.getElementById("overlay").addEventListener("click", ()=>{
     document.getElementById("overlay").style.display = "none";
     document.getElementById("mainSearchContainer").classList.remove("expandedClass");
-    document.body.style.overflowY = "scroll";
 });
