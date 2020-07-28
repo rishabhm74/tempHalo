@@ -450,7 +450,8 @@ body{
     position: fixed;
     top: 0%;
     left: 0%;
-    height: 100vh;
+    height: 768px;
+    max-height: 768px;
     width: 100vw;
     background-color: #fff;
     animation-name: overlayVisible;
@@ -1665,8 +1666,14 @@ body{
     }
 
 
+    .overlay{
+        height: 768px;
+        max-height: 768px;
+        
+    }
+
     .expandedClass{
-        top: 0.25rem;
+        top: 0.1rem;
         width: 94%;
     }
 
