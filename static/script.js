@@ -98,7 +98,23 @@ document.getElementById("mainSearchBar").addEventListener("click", ()=>{
 var currentEntry = ``;
 
 document.getElementById("mainSearchBar").addEventListener("keyup", ()=>{
+    document.getElementById("innerMost").style.border = "1px solid #e4e4e4";
+    document.getElementById("innerMost").style.borderTop = "none";
     var tempVal = document.getElementById("mainSearchBar").value;
-    currentEntry += `<li class="suggestionList">${tempVal}</li>`
-    document.getElementById("innerMost").innerHTML = currentEntry;
+    if(tempVal.length > 0){
+        if(document.getElementById("innerMost").childElementCount <=6){
+            currentEntry += `<li class="suggestionList">${tempVal}</li>`
+            document.getElementById("innerMost").innerHTML = currentEntry;
+        }
+    }
+    else{
+        //nothing
+    }
+
+    if(tempVal.length == 0){
+        document.getElementById("innerMost").innerHTML = "";
+        document.getElementById("innerMost").style.border = "1px solid #e4e4e400";
+        currentEntry = "";
+    }
 });
+

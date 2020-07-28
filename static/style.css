@@ -495,15 +495,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .innerMost{
     height: 100%;
     width: 50%;
     background-color: #fff;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #e4e4e400;
     border-radius:  0 0 0.4rem 0.4rem;
     border-top: none;
+    overflow: hidden;
 }
 
 .suggestionList{
@@ -513,6 +515,7 @@ body{
     color: #adadad;
     padding: 0.5rem 2rem;
     font-weight: 400;
+    overflow: hidden;
 }
 
 .innerMost .suggestionList:first-child{
@@ -1720,6 +1723,17 @@ body{
     .innerMost{
         width: 85%;
     }
+
+    .suggestionList{
+        list-style: none;
+        font-family: 'Poppins',sans-serif;
+        font-size: 1rem;
+        color: #adadad;
+        padding: 0.5rem 1rem;
+        font-weight: 400;
+        overflow: hidden;
+    }
+    
 
 
 
