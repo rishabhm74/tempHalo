@@ -75,21 +75,9 @@ document.getElementById("showMoreLetterButton").addEventListener("click", ()=>{
 
 
 
-// document.getElementById("mainSearchBar").addEventListener("click", ()=>{
-//     document.getElementById("mainSearchContainer").classList.add("expandedClass");
-//     document.getElementById("overlay").style.display = "block";
-//     document.body.style.height = "768px";
-// });
-
-// document.getElementById("overlay").addEventListener("click", ()=>{
-//     document.getElementById("overlay").style.display = "none";
-//     document.getElementById("mainSearchContainer").classList.remove("expandedClass");
-//     document.body.style.height = "auto";
-// });
 
 
-
-document.getElementById("mainSearchBar").addEventListener("click", ()=>{
+document.getElementById("mainSearchBar").addEventListener("focusin", ()=>{
     var temp = document.getElementById("mainSearchContainer").offsetTop;
     var temp2 =document.getElementById("navbar").clientHeight;
     var temp3 = temp - temp2 - 15;
@@ -127,3 +115,9 @@ document.getElementById("mainSearchBar").addEventListener("keyup", ()=>{
     }
 });
 
+
+document.getElementById("mainSearchBar").addEventListener("focusout", ()=>{
+    document.getElementById("innerMost").innerHTML = "";
+    document.getElementById("innerMost").style.border = "1px solid #e4e4e400";
+    currentEntry = "";
+})

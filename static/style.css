@@ -10,7 +10,7 @@
 
 *::selection{
     color: #292929;
-    background-color: #fff5db;
+    background-color: #ffeab4;
 }
 
 body{
@@ -342,6 +342,8 @@ body{
 
 
 
+
+
 .mainSearchContainer{
     height: auto;
     width: 100%;
@@ -416,19 +418,23 @@ body{
 .learnMoreContainer button{
     border: none;
     background: none;
-    border: 1px solid #2af15c; /*f8c724*/
+    /* border: 1px solid #30f170;  */
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: #2fff8d; /*ffcf2f*/
+    /* background-color: #2fff74; ffcf2f */
+    background: linear-gradient(45deg, #2fff9e, rgb(98, 171, 255));
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .learnMoreContainer button:hover{
-    background-color: #2fff8dc9; /*ffce2fb4*/
+    /* background-color: #2fff74d5;  */
+    background: linear-gradient(15deg, #2fff9e, #479dff);
+    transform: scale(110%);
+    box-shadow: 0px 5px 20px #2f8cf771;
 }
 
 .learnMoreContainer button:focus{

@@ -8,64 +8,271 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: #292929;
+    background-color: #ffeab4;
+}
+
+
 body{
     height: auto;
+    background: url('assets/bigBack.png') ;
 }
 
-/* mainOuterContainer starts */
 
-.mainOuterContainer{
-    height: 667px;
+
+/* topUserContainer starts */
+
+.topUserContainer{
+    height: 10rem;
+    background-color: ;
+}
+
+/* innerTopContainer starts */
+
+.innerTopContainer{
+    height: 100%;
+    width: 90%;
+    background-color: ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.userGreetingContainer{
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    background: linear-gradient(to bottom, #143fa3, #9B6AF0);
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.userGreeting{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.userSubGreet{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    color: #929292;
+    font-weight: 400;
+    padding-top: 0.25rem;
+}
+
+.userControlsContainer{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.userControlsContainer img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid #eeeeee;
+    margin-right: 0.5rem;
+}
+
+.userControlButtons{
+    display: flex;
+}
+
+.userControlButtons li{
+    list-style: none;
+    padding: 1rem 0.5rem;
+}
+
+.userControlButtons li:last-child{
+    padding-right: 0;
+}
+
+.userControlButtons li a{
+    text-decoration: none;
+    color: #707070;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.75rem;
+}
+
+.userControlButtons li:last-child a{
+    background: #ffffff;
+    padding: 0.5rem 1.5rem;
+    color: #008f7e;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 5px 10px #00000009;
+    transition: 0.3s;
+}
+
+.userControlButtons li:last-child a:hover{
+    color: #fff;
+    background-color: #00796B;
+    border: 1px solid #00796b00;
+    box-shadow: 0px 5px 10px #00000012;
 }
 
 
-/* leftContainer starts */
 
-.leftContainer{
-    width: 25%;
-}
+/* innerTopContainer ends */
+
+/* topUserContainer ends */
 
 
-/* leftContainer ends */
 
-/* rightContainer starts */
-
-.rightContainer{
-    width: 75%;
+.mainContainer{
+    height: auto;
+    min-height: 667px;
     background-color: #fff;
-    box-shadow: -1.5rem 0 15px #00000014;
+    border-radius: 1.5rem 1.5rem 0 0;
+    border: 1px solid #eeeeee;
+    border-bottom: none;
+    box-shadow: 0 -7px 15px #00000008;
 }
 
 
+/* mainContainer ends */
 
-/* rightContainer ends */
 
 
-/* mainOuterContainer ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer starts*/
+.pageFooter{
+    background-color: #fff;
+    border-top: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.pageFooter a{
+    text-decoration: none;
+    color: #a8a8a8;
+    transition: 0.3s;
+    font-weight: 300;
+}
+
+.pageFooter span{
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.pageFooter a:hover{
+    color: #363636;
+}
+
+/* footer ends */
 
 
 
 @media (max-width: 1280px){
 
-    .mainOuterContainer{
+
+    .topUserContainer{
+        height: 10rem;
+        background-color: ;
+    }
+
+    .innerTopContainer{
+        display: flex;
         flex-direction: column;
-        background: linear-gradient(to bottom, #1545b6, #9B6AF0, #9B6AF0, #9B6AF0);
     }
 
-    .leftContainer{
-        height: 25%;
-        width: 100%;
-        background: rgba(255, 255, 255, 0);
+    .userGreeting{
+        font-family: 'Poppins', sans-serif;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333333;
+        padding-left: 1rem;
     }
 
-    .rightContainer{
-        height: 75%;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0rem -1rem 10px #00000010;
+    .userSubGreet{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.75rem;
+        color: #bebebe;
+        font-weight: 400;
+        padding-top: 0.25rem;
+        width: 75%;
+        padding-left: 1rem;
+    }
+
+    .userControlsContainer img{
+       display: none;
+    }
+
+    .userControlsContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .userControlButtons li{
+        list-style: none;
+        padding-top: 1rem;
+        margin: 0 1rem;
+    }
+
+    .userControlButtons li:first-child{
+        margin-left: 0;
+    }
+
+    .userControlButtons li:last-child{
+        margin-left: 3rem;
+    }
+
+    .userControlButtons li:first-child a{
+        background: #ffffff;
+        padding: 0.5rem 1.5rem;
+        color: #008f7e;
+        border-radius: 1.5rem;
+        font-weight: 500;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 5px 10px #00000009;
+        transition: 0.3s;
+    }
+    
+    .userControlButtons li:first-child a:hover{
+        color: #fff;
+        background-color: #00796B;
+        border: 1px solid #00796b00;
+        box-shadow: 0px 5px 10px #00000012;
+    }
+
+    .userControlButtons li:last-child a{
+        background: #ffffff;
+        padding: 0.5rem 1.75rem;
+        color: #008f7e;
+        border-radius: 1.5rem;
+        font-weight: 500;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0px 5px 10px #00000009;
+        transition: 0.3s;
     }
 
 }
