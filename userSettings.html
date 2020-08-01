@@ -5,39 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard | Halo</title>
     <link rel="stylesheet" href="static/userSettings.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     
-    <div class="topUserContainer">
-        <div class="innerTopContainer">
-            <div class="userGreetingContainer">
-                <div class="userGreeting">
-                    Hi Rishabhm74,
-                </div>
-                <div class="userSubGreet">
-                    Welcome to dashboard, here you can manage all your account settings
-                </div>
-            </div>
-            <div class="userControlsContainer">
+    <div class="userTopBack">
 
-                <img src="static/assets/defaultUserAvatar.png" alt="">
-                <div class="userControlButtons">
-                    <li><a href="#">Halo home</a></li>
-                    <li><a href="#">Log Out</a></li>
-                </div>
+    </div>
+
+    <div class="userBottom">
+
+        <img class="userImageContainer" src="static/assets/defaultUserAvatar.png" alt="">
+
+
+        <div class="userAboutContainer">
+            <div class="userUsernameContainer">
+                Rishabhm74
             </div>
+
+            <button class="userLogOutButton">
+                Log Out
+            </button>
         </div>
+
+
+        <div class="mainUserDataContainer">
+
+            <div class="userSearchHistoryContainer">
+                <div class="historySection">
+
+                    <div class="historySectionTitle">
+                        <li>History</li>
+                        <li><img src="static/assets/clear.svg" alt=""></li>
+                    </div>
+
+                    <div class="historyList">
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                       
+
+                        <!-- <p>
+                            Nothing yet
+                        </p> -->
+                    </div>
+
+                </div>
+
+                <div class="bookmarkSection">
+
+                    <div class="bookmarkSectionTitle">
+                        <li>Bookmarks</li>
+                        <li><img src="static/assets/clear.svg" alt=""></li>
+                    </div>
+
+                    <div class="bookmarkList">
+                        <!-- <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem.</li>
+                        <li>lorem0</li>
+                        <li>Lorem, ipsum dolor.</li> -->
+
+                        <p>
+                            Nothing yet
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="middleContainer">
+                <div class="innerMiddle"></div>
+            </div>
+
+            <div class="lastContainer">
+
+                <div class="notesContainer">
+
+                    <div class="notesTitleContainer">
+                        <li>Notes</li>
+                        <li><img src="static/assets/add.svg" alt=""></li>
+                    </div>
+
+                    <div class="mainList">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sequi nisi repudiandae eum quae repellendus?</li>
+
+                        <!-- <p>
+                            Nothing yet
+                        </p> -->
+                    </div>
+
+                </div>
+
+                <div class="calendarContainer">
+
+                    <div class="calendar">
+                        <div class="month">
+                          <i class="fas fa-angle-left prev"></i>
+                          <div class="date">
+                            <h1></h1>
+                            <p></p>
+                          </div>
+                          <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                          <div>Sun</div>
+                          <div>Mon</div>
+                          <div>Tue</div>
+                          <div>Wed</div>
+                          <div>Thu</div>
+                          <div>Fri</div>
+                          <div>Sat</div>
+                        </div>
+                        <div class="days"></div>
+                      </div>
+
+                </div>
+
+            </div>
+
+
+            
+
+
+        </div>
+
     </div>
 
-    <div class="mainContainer">
 
-    </div>
+
+
+   
 
 
     <div class="pageFooter">
         <a href="index.html">halo<span>dictionary</span></a>
     </div>
 
+
+    <script src="static/userSettingsScript.js"></script>
 
 </body>
 </html>
